@@ -1,22 +1,50 @@
 :root {
+  /*  Nord Palette @ https://www.nordtheme.com/docs/colors-and-palettes  */
+  /*  Polar Night  */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  /*  Snow Storm  */
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  /*  Frost  */
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  /* Aurora */
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3bee8c;
+  --nord15: #b48ead;
+  
   @media (prefers-color-scheme: dark) {
     --zen-colors-primary: #4c566a !important;
     --zen-colors-secondary: #434c5e !important;
     --zen-colors-tertiary: #3b4252 !important;
-    --zen-colors-border: #d8dee9 !important;
+    --zen-colors-quaternary: #2e3440 !important;
+    --zen-colors-border: var(--zen-primary-color) !important;
     --zen-primary-color: #d8dee9 !important;
     --zen-navigator-toolbox-background: #2e3440 !important;
     --toolbarbutton-hover-background: #81a1c1 !important;
     --toolbar-field-background-color: #434c5e !important;
+    --zen-dialog-background: var(--zen-colors-tertiary) !important;
   }
+    --arrowpanel-border-color: #ff0000 !important;
 }
 
 #PersonalToolbar {
-    @media (prefers-color-scheme: dark) {
-        background-color: #2e3440 !important;
-      }
+  background-color: var(--zen-colors-quaternary) !important;
 }
 
-#nav-bar, #zen-sidebar-top-buttons {
+#nav-bar, 
+#zen-sidebar-top-buttons {
   background-color: #2e3440 !important;
+}
+
+.toolbar-menupopup {
+  background-color: var(--zen-colors-tertiary) !important;;
 }
